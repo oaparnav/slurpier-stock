@@ -17,5 +17,9 @@ public class StockDetails {
 		this.lastUpdated = new Date();
 		return currentPrice;
 	}
+	
+	public double getLastClosingPrice(StockService stockService, String ticker) {
+		return (double) stockService.lastClosingDetails(ticker).get(0);
+	}
 
 }
