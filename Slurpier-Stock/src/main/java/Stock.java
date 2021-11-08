@@ -23,7 +23,7 @@ class Stock {
 	}
 
 	public double getLastClosingPrice(StockService stockService) {
-		return stockDetails.getPrice(stockService, ticker);
+		return stockDetails.getLastClosingPrice(stockService, ticker);
 	}
 
 }
