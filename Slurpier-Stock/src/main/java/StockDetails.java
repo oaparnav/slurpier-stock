@@ -4,6 +4,7 @@ public class StockDetails {
 
 	private Double lastUpdatedPrice;
 	private Date lastUpdated;
+	private Double lastClosingPrice;
 
 	public StockDetails(Double lastUpdatedPrice, Date lastUpdated) {
 		super();
@@ -19,7 +20,13 @@ public class StockDetails {
 	}
 	
 	public double getLastClosingPrice(StockService stockService, String ticker) {
-		return (double) stockService.lastClosingDetails(ticker).get(0);
+		this.lastClosingPrice =(double) stockService.lastClosingDetails(ticker).get(0);
+		return lastClosingPrice;
+	}
+	
+	public double getStockPercentChange()
+	{	
+		return 0.0d;
 	}
 
 }
