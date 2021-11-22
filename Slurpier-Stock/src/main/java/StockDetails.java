@@ -24,9 +24,9 @@ public class StockDetails {
 		return lastClosingPrice;
 	}
 	
-	public double getStockPercentChange()
-	{	
-		return 0.0d;
+	public double getStockPercentChange() {
+		double netChange = this.lastUpdatedPrice - this.lastClosingPrice;
+		return (netChange/this.lastClosingPrice) * 100;
 	}
 
 }

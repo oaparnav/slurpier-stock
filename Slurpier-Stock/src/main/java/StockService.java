@@ -9,11 +9,6 @@ interface StockService {
    */
   double getPrice(String ticker);
   
-  //boolean delete(StockRepository stockRepository);
-  
-  Stock getPrice(Stock stock);
-  
-  
   /**
    *  For a given ticker, the API call returns three elements in a list:
    *  1. Last Closing Price is a double.

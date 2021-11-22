@@ -16,10 +16,5 @@ public class StockServiceImpl implements StockService{
 		return null;
 	}
 
-	@Override
-	public Stock getPrice(Stock stock) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 }

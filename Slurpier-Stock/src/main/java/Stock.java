@@ -18,12 +18,15 @@ class Stock {
 	}
 
 	public boolean delete(StockRepository stockRepository) {
-		stockRepository.delete(ticker);
-		return false;
+		return stockRepository.delete(ticker);
 	}
 
 	public double getLastClosingPrice(StockService stockService) {
 		return stockDetails.getLastClosingPrice(stockService, ticker);
+	}
+	
+	public double getStockPercentChange(StockService stockService) {
+		return stockDetails.getStockPercentChange();
 	}
 
 }
